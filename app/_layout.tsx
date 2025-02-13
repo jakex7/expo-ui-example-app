@@ -63,34 +63,11 @@ export default function RootLayout() {
         <Stack.Screen
           name="(tabs)"
           options={{
-            headerShown: true,
-            headerLargeTitle: true,
-            headerSearchBarOptions: {},
-            headerTransparent: true,
-            headerBlurEffect: "systemUltraThinMaterial",
-            title: "Flavour List",
-            headerRight: () => {
-              // return null;
-              return (
-                <View>
-                  {/* <ContextMenu Items={MenuItems} > */}
-                  <SymbolView
-                    name="line.3.horizontal.decrease.circle"
-                    size={28}
-                  />
-                  {/* </ContextMenu> */}
-                </View>
-              );
-            },
+            headerShown: false,
           }}
         />
-        <Stack.Screen name="+not-found" />
       </Stack>
       <StatusBar style="auto" />
-
-      {/* <ContextMenu Items={MenuItems}>
-        <SymbolView name="line.3.horizontal.decrease.circle" size={28} />
-      </ContextMenu> */}
     </ThemeProvider>
   );
 }

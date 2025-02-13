@@ -25,7 +25,7 @@
     "expo-font": "13.0.4-canary-20250131-5c4e588",
     "expo-haptics": "14.1.0-canary-20250131-5c4e588",
     "expo-linking": "7.1.0-canary-20250131-5c4e588",
-    "expo-maps": "https://gitpkg.vercel.app/expo/expo/packages/expo-maps?main",
+    "expo-maps": "https://gitpkg.vercel.app/expo/expo/packages/expo-maps?@jakex7/maps/onMarkerClick",
     "expo-router": "4.1.0-canary-20250131-5c4e588",
     "expo-splash-screen": "0.29.22-canary-20250131-5c4e588",
     "expo-status-bar": "2.0.2-canary-20250131-5c4e588",

@@ -1,14 +1,14 @@
-import { Tabs } from "expo-router";
-import React from "react";
-import { Platform } from "react-native";
-
 import { HapticTab } from "@/components/HapticTab";
 import { IconSymbol } from "@/components/ui/IconSymbol";
 import TabBarBackground from "@/components/ui/TabBarBackground";
 import { Colors } from "@/constants/Colors";
 import { useColorScheme } from "@/hooks/useColorScheme";
+import { Tabs } from "expo-router";
+import * as SplashScreen from "expo-splash-screen";
+import React from "react";
+import { Platform } from "react-native";
 
-export default function TabLayout() {
+export default function RootLayout() {
   const colorScheme = useColorScheme();
 
   return (
@@ -19,17 +19,16 @@ export default function TabLayout() {
         tabBarButton: HapticTab,
         tabBarBackground: TabBarBackground,
         tabBarStyle: Platform.select({
-          ios: {
-            // Use a transparent background on iOS to show the blur effect
-            position: "absolute",
-          },
+          ios: { position: "absolute" },
           default: {},
         }),
       }}
+      initialRouteName="(flavour)"
     >
       <Tabs.Screen
-        name="index"
+        name="(flavour)"
         options={{
+          headerShown: false,
           title: "Flavour List",
           tabBarIcon: ({ color }) => (
             <IconSymbol size={28} name="cup.and.saucer.fill" color={color} />
@@ -37,11 +36,22 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="(location)"
         options={{
-          title: "Explore",
+          headerShown: false,
+          title: "Location List",
           tabBarIcon: ({ color }) => (
-            <IconSymbol size={28} name="paperplane.fill" color={color} />
+            <IconSymbol size={28} name="mappin.and.ellipse" color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="(map)"
+        options={{
+          headerShown: false,
+          title: "Map",
+          tabBarIcon: ({ color }) => (
+            <IconSymbol size={28} name="map.fill" color={color} />
           ),
         }}
       />

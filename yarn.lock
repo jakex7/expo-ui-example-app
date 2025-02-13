@@ -3310,9 +3310,9 @@ expo-linking@7.1.0-canary-20250131-5c4e588:
     expo-constants "17.0.6-canary-20250131-5c4e588"
     invariant "^2.2.4"
 
-"expo-maps@https://gitpkg.vercel.app/expo/expo/packages/expo-maps?main":
+"expo-maps@https://gitpkg.vercel.app/expo/expo/packages/expo-maps?@jakex7/maps/onMarkerClick":
   version "0.6.1"
-  resolved "https://gitpkg.vercel.app/expo/expo/packages/expo-maps?main#d3325435254cf1a6d01d916ed71717e04ab12caf"
+  resolved "https://gitpkg.vercel.app/expo/expo/packages/expo-maps?@jakex7/maps/onMarkerClick#eabf47e450a381939f255eaf6d5c4936b2f1ba53"
 
 expo-modules-autolinking@2.1.0-canary-20250131-5c4e588:
   version "2.1.0-canary-20250131-5c4e588"

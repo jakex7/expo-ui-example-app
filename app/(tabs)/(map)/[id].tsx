@@ -1,20 +1,9 @@
-import { useLocalSearchParams } from "expo-router";
-import {
-  Platform,
-  PlatformColor,
-  ScrollView,
-  StyleSheet,
-  Text,
-  View,
-} from "react-native";
-
 import LocationList from "@/assets/data/LocationList.json";
 import { ThemedText } from "@/components/ThemedText";
 import { Section } from "@expo/ui/components/Section";
-import {
-  useSafeAreaFrame,
-  useSafeAreaInsets,
-} from "react-native-safe-area-context";
+import { useLocalSearchParams } from "expo-router";
+import { ScrollView, View } from "react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 export default function MapLocationScreen() {
   const { id } = useLocalSearchParams();
@@ -48,16 +37,3 @@ export default function MapLocationScreen() {
     </ScrollView>
   );
 }
-
-const styles = StyleSheet.create({
-  headerImage: {
-    color: "#808080",
-    bottom: -90,
-    left: -35,
-    position: "absolute",
-  },
-  titleContainer: {
-    flexDirection: "row",
-    gap: 8,
-  },
-});

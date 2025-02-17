@@ -10,11 +10,7 @@ import { StatusBar } from "expo-status-bar";
 import { useEffect } from "react";
 
 import { useColorScheme } from "@/hooks/useColorScheme";
-import { ContextMenu } from "@expo/ui/components/ContextMenu";
-import { SymbolView } from "expo-symbols";
-import { Button } from "@expo/ui/components/Button";
 import React from "react";
-import { View } from "react-native";
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -34,38 +30,11 @@ export default function RootLayout() {
   if (!loaded) {
     return null;
   }
-  const MenuItems = (
-    <>
-      <Button onPress={() => console.log("Pressed1")}>
-        Show Favourites Only
-      </Button>
-      {/* <Button onPress={() => console.log("Pressed2")}>Hide Tasted</Button>
-      <Button onPress={() => console.log("Pressed3")}>Show Current Only</Button>
-      <Button onPress={() => console.log("Pressed4")}>Show Vegan Only</Button>
-      <Button onPress={() => console.log("Pressed5")}>
-        Show Dairy Free Only
-      </Button>
-      <Button onPress={() => console.log("Pressed6")}>
-        Show Gluten Free Only
-      </Button>
-      <Button onPress={() => console.log("Pressed7")}>
-        Show Nut Free Only
-      </Button>
-      <Button onPress={() => console.log("Pressed8")}>
-        Show Alcohol Free Only
-      </Button> */}
-    </>
-  );
 
   return (
     <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
       <Stack>
-        <Stack.Screen
-          name="(tabs)"
-          options={{
-            headerShown: false,
-          }}
-        />
+        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
       </Stack>
       <StatusBar style="auto" />
     </ThemeProvider>

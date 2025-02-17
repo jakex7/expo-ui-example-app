@@ -1,5 +1,4 @@
 import { Stack } from "expo-router";
-
 import { SymbolView } from "expo-symbols";
 import React from "react";
 import { View } from "react-native";

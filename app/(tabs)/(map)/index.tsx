@@ -1,8 +1,6 @@
-import { StyleSheet } from "react-native";
 import LocationList from "@/assets/data/LocationList.json";
-
 import { AppleMaps } from "expo-maps";
-import { router, useNavigation } from "expo-router";
+import { router } from "expo-router";
 
 const LOCATIONS = LocationList.data
   .map((location) => {
@@ -50,16 +48,3 @@ export default function MapScreen() {
     />
   );
 }
-
-const styles = StyleSheet.create({
-  headerImage: {
-    color: "#808080",
-    bottom: -90,
-    left: -35,
-    position: "absolute",
-  },
-  titleContainer: {
-    flexDirection: "row",
-    gap: 8,
-  },
-});

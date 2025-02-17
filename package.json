@@ -29,7 +29,7 @@
     "expo-router": "4.1.0-canary-20250131-5c4e588",
     "expo-splash-screen": "0.29.22-canary-20250131-5c4e588",
     "expo-status-bar": "2.0.2-canary-20250131-5c4e588",
-    "expo-symbols": "0.2.2-canary-20250131-5c4e588",
+    "expo-symbols": "https://gitpkg.vercel.app/expo/expo/packages/expo-symbols?main",
     "expo-system-ui": "4.0.8-canary-20250131-5c4e588",
     "react": "18.3.1",
     "react-dom": "18.3.1",

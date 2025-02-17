@@ -3,13 +3,13 @@ PODS:
   - DoubleConversion (1.1.6)
   - EXConstants (17.0.6-canary-20250131-5c4e588):
     - ExpoModulesCore
-  - Expo (53.0.0-canary-20250131-5c4e588):
+  - Expo (53.0.0-canary-20250207-8bc5146):
     - ExpoModulesCore
-  - ExpoAsset (11.1.0-canary-20250131-5c4e588):
+  - ExpoAsset (11.1.0-canary-20250207-8bc5146):
     - ExpoModulesCore
   - ExpoBlur (14.0.4-canary-20250131-5c4e588):
     - ExpoModulesCore
-  - ExpoFileSystem (18.1.0-canary-20250131-5c4e588):
+  - ExpoFileSystem (18.1.0-canary-20250207-8bc5146):
     - ExpoModulesCore
   - ExpoFont (13.0.4-canary-20250131-5c4e588):
     - ExpoModulesCore
@@ -17,13 +17,13 @@ PODS:
     - ExpoModulesCore
   - ExpoHead (4.1.0-canary-20250131-5c4e588):
     - ExpoModulesCore
-  - ExpoKeepAwake (14.0.3-canary-20250131-5c4e588):
+  - ExpoKeepAwake (14.0.3-canary-20250207-8bc5146):
     - ExpoModulesCore
   - ExpoLinking (7.1.0-canary-20250131-5c4e588):
     - ExpoModulesCore
   - ExpoMaps (0.6.1):
     - ExpoModulesCore
-  - ExpoModulesCore (2.3.0-canary-20250131-5c4e588):
+  - ExpoModulesCore (2.3.0-canary-20250207-8bc5146):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -48,7 +48,7 @@ PODS:
     - Yoga
   - ExpoSplashScreen (0.29.22-canary-20250131-5c4e588):
     - ExpoModulesCore
-  - ExpoSymbols (0.2.2-canary-20250131-5c4e588):
+  - ExpoSymbols (0.2.0):
     - ExpoModulesCore
   - ExpoSystemUI (4.0.8-canary-20250131-5c4e588):
     - ExpoModulesCore
@@ -1934,19 +1934,19 @@ SPEC CHECKSUMS:
   boost: 1dca942403ed9342f98334bf4c3621f011aa7946
   DoubleConversion: f16ae600a246532c4020132d54af21d0ddb2a385
   EXConstants: e75443d05ef353879d2c6bc4725066bf401d5928
-  Expo: 573434ee2feb8c61b0eae84cceea116417031546
-  ExpoAsset: fff626e7912df8e7c4983e9fc20b4780d91f881b
+  Expo: 6d738f8dc0b92bc8a4d2ed82de1861f05866bac5
+  ExpoAsset: 67db84756a2e2b2fcb1841cc573d8e14da9b5eaf
   ExpoBlur: 5f7cfee69716c358702d35e1b77c2fae75200f83
-  ExpoFileSystem: 32ddaa7db1a212f516072a4d6d146a1e7b4663e2
+  ExpoFileSystem: 340fd4318c21daa6957ce674f7ec43f14e5cdf04
   ExpoFont: 7b0f433eaf416120520202a83d99bdcb49770c41
   ExpoHaptics: b274ed99250439532621f2104f399f8e84954e6c
   ExpoHead: c1e1c2cffe81e04f348104b5344116f03769b50d
-  ExpoKeepAwake: b3245f1985f539ed53ce3a58535470ebb868974a
+  ExpoKeepAwake: 28fb909bf55157b2c508d899cb401185cec89cd3
   ExpoLinking: a345819d83d057fb8b5aa28883a189d4a6cf358a
   ExpoMaps: 8e317d0782cec7cc4d93b272c49b5eded8d409e3
-  ExpoModulesCore: ad28713d7c9e4fa921b03d1965910f81e872c0db
+  ExpoModulesCore: f6b2d7fc8a3107f33baaa1ee06bfb21cac13882f
   ExpoSplashScreen: 22809253c89407ccd54cbd377611a74414f8d83a
-  ExpoSymbols: 36377371bb006c4f5de5b5c28f0ca50d5caf7898
+  ExpoSymbols: ed2f35e4a0290ff242eb295bd47adff2e46f5bfc
   ExpoSystemUI: c266f1d73bc4bf5007f3b68d3599f192519198e4
   ExpoUI: b1d3c4b674f94ce7320002b9dc6025501cb28c6b
   FBLazyVector: be7314029d6ec6b90f0f75ce1195b8130ed9ac4f

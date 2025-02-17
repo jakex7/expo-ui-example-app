@@ -27,7 +27,7 @@ export default function MapScreen() {
       properties={{ selectionEnabled: false }}
       onMarkerClick={(event) => {
         router.push(
-          `/(map)/${
+          `/${
             LocationList.data.find((location) =>
               location.stores.find(
                 (store) =>

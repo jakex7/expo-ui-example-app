@@ -1,7 +1,7 @@
 import LocationList from "@/assets/data/LocationList.json";
 import { ThemedText } from "@/components/ThemedText";
 import { Section } from "@expo/ui/components/Section";
-import { useNavigation } from "expo-router";
+import { Link, useNavigation } from "expo-router";
 import { SymbolView } from "expo-symbols";
 import React, { useLayoutEffect, useState } from "react";
 import { ScrollView, StyleSheet, View } from "react-native";
@@ -33,16 +33,19 @@ export default function LocationScreen() {
               : undefined,
           )
           .map((location) => (
-            <View key={location.id} style={styles.element}>
-              <ThemedText numberOfLines={2} style={{ width: "90%" }}>
-                {location.name}
-              </ThemedText>
-              <SymbolView
-                name="chevron.right"
-                size={16}
-                tintColor="lightgrey"
-              />
-            </View>
+            <Link key={location.id} href={`/${location.id}`}>
+              <View style={styles.element}>
+                <ThemedText numberOfLines={1} style={{ flex: 1 }}>
+                  {location.name}
+                </ThemedText>
+                <SymbolView
+                  name="chevron.right"
+                  size={16}
+                  tintColor="lightgrey"
+                  style={{ marginLeft: 16 }}
+                />
+              </View>
+            </Link>
           ))}
       </Section>
     </ScrollView>

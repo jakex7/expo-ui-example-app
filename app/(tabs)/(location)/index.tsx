@@ -22,7 +22,7 @@ export default function LocationScreen() {
     <ScrollView
       style={styles.container}
       contentInsetAdjustmentBehavior="automatic"
-      contentInset={{ bottom: 60, top: -30 }}
+      contentInset={{ bottom: 60 }}
     >
       <Section title="">
         {LocationList.data
